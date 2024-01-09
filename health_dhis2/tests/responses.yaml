@@ -1,0 +1,394 @@
+# SPDX-FileCopyrightText: 2023 Florian Liermann
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+responses:
+- response:
+    auto_calculate_content_length: false
+    body: '{"id":"M5zQapPyTZI","username":"admin","surname":"admin","firstName":"admin","created":"2023-06-21T12:47:29.591","lastUpdated":"2023-11-15T23:00:16.422","dataViewOrganisationUnits":[{"id":"fRx7slGzH46"}],"favorites":[],"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{}},"userGroupAccesses":[],"userAccesses":[],"userGroups":[],"translations":[],"teiSearchOrganisationUnits":[{"id":"fRx7slGzH46"}],"organisationUnits":[{"id":"fRx7slGzH46"}],"externalAccess":false,"displayName":"admin
+      admin","access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"name":"admin
+      admin","userRoles":[{"id":"yrB6vc5Ip3r"}],"settings":{"keyMessageSmsNotification":true,"keyStyle":"light_blue/light_blue.css","keyUiLocale":"en","keyAnalysisDisplayProperty":"name","keyMessageEmailNotification":true},"programs":[],"authorities":["F_TRACKED_ENTITY_INSTANCE_SEARCH_IN_ALL_ORGUNITS","F_TRACKER_IMPORTER_EXPERIMENTAL","ALL","F_USERGROUP_MANAGING_RELATIONSHIPS_ADD","F_USER_VIEW","F_GENERATE_MIN_MAX_VALUES","F_USER_GROUPS_READ_ONLY_ADD_MEMBERS","F_ORGANISATIONUNIT_MOVE","F_PREDICTOR_RUN","F_ORGANISATION_UNIT_SPLIT","F_IGNORE_TRACKER_REQUIRED_VALUE_VALIDATION","F_SKIP_DATA_IMPORT_AUDIT","F_RUN_VALIDATION","F_ORG_UNIT_PROFILE_ADD","F_DATAVALUE_DELETE","F_TRACKED_ENTITY_MERGE","F_IMPORT_DATA","F_PERFORM_ANALYTICS_EXPLAIN","F_ORGANISATION_UNIT_MERGE","F_REPLICATE_USER","F_LOCALE_ADD","F_SEND_EMAIL","F_DATAVALUE_ADD","F_INSERT_CUSTOM_JS_CSS","F_ENROLLMENT_CASCADE_DELETE","F_METADATA_IMPORT","F_EXPORT_EVENTS","F_VIEW_EVENT_ANALYTICS","F_VIEW_UNAPPROVED_DATA","F_IMPORT_EVENTS","F_PERFORM_MAINTENANCE","F_USERGROUP_MANAGING_RELATIONSHIPS_VIEW","F_TEI_CASCADE_DELETE","F_METADATA_EXPORT","F_EXPORT_DATA","F_APPROVE_DATA","F_ACCEPT_DATA_LOWER_LEVELS","F_EDIT_EXPIRED","F_PROGRAM_DASHBOARD_CONFIG_ADMIN","F_APPROVE_DATA_LOWER_LEVELS","F_VIEW_SERVER_INFO","F_UNCOMPLETE_EVENT"],"dataSets":["W1GOcpL46Zr","CVrfb2teXKY"],"userCredentials":{"id":"M5zQapPyTZI","username":"admin","externalAuth":false,"twoFA":false,"passwordLastUpdated":"2023-06-21T12:47:29.657","cogsDimensionConstraints":[],"catDimensionConstraints":[],"previousPasswords":[],"lastLogin":"2023-11-15T23:00:16.419","selfRegistered":false,"invitation":false,"disabled":false,"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{}},"userRoles":[{"id":"yrB6vc5Ip3r"}]}}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/me
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/organisationUnits/fRx7slGzH46","name":"Test
+      Organisation Unit","created":"2023-07-15T13:44:34.697","lastUpdated":"2023-11-07T19:35:36.746","translations":[],"externalAccess":false,"createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"shortName":"TOU","dimensionItemType":"ORGANISATION_UNIT","legendSets":[],"children":[],"path":"/fRx7slGzH46","openingDate":"2022-01-01T00:00:00.000","dataSets":[{"id":"W1GOcpL46Zr"},{"id":"CVrfb2teXKY"}],"programs":[],"users":[{"id":"M5zQapPyTZI"}],"leaf":true,"dimensionItem":"fRx7slGzH46","displayShortName":"TOU","displayName":"Test
+      Organisation Unit","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Test
+      Organisation Unit","id":"fRx7slGzH46","attributeValues":[],"organisationUnitGroups":[],"level":1,"ancestors":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/organisationUnits/fRx7slGzH46
+- response:
+    auto_calculate_content_length: false
+    body: '{"pager":{"page":1,"total":4,"pageSize":50,"pageCount":1},"categoryCombos":[{"displayName":"default","id":"bjDvmb4bfuf"},{"displayName":"Gender","id":"LgFf8AL1Fyx"},{"displayName":"Gender/Age","id":"qc0so4e4EHP"},{"displayName":"TestAttribute","id":"ztwr7HhdTVg"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/bjDvmb4bfuf","code":"default","name":"default","created":"2023-06-21T12:47:30.088","lastUpdated":"2023-06-21T12:47:30.106","translations":[],"externalAccess":false,"publicAccess":"rw------","userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"GLevLNI9wkl"}],"dataDimensionType":"DISAGGREGATION","skipTotal":false,"displayName":"default","favorite":false,"id":"bjDvmb4bfuf","attributeValues":[],"categoryOptionCombos":[{"id":"HllvX50cXC0"}],"isDefault":true}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/bjDvmb4bfuf
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/bjDvmb4bfuf","code":"default","name":"default","created":"2023-06-21T12:47:30.088","lastUpdated":"2023-06-21T12:47:30.106","translations":[],"externalAccess":false,"publicAccess":"rw------","userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"GLevLNI9wkl"}],"dataDimensionType":"DISAGGREGATION","skipTotal":false,"displayName":"default","favorite":false,"id":"bjDvmb4bfuf","attributeValues":[],"categoryOptionCombos":[{"id":"HllvX50cXC0"}],"isDefault":true}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/bjDvmb4bfuf
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/HllvX50cXC0","code":"default","name":"default","created":"2023-06-21T12:47:30.093","lastUpdated":"2023-06-21T12:47:30.105","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"categoryOptions":[{"id":"xYerKDKCefk"}],"ignoreApproval":false,"dimensionItem":"HllvX50cXC0","displayShortName":"default","displayName":"default","favorite":false,"displayFormName":"default","id":"HllvX50cXC0","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/HllvX50cXC0
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/LgFf8AL1Fyx","name":"Gender","created":"2023-10-22T17:27:25.464","lastUpdated":"2023-10-22T17:27:53.691","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"col9T7L6nhj"}],"dataDimensionType":"ATTRIBUTE","skipTotal":false,"displayName":"Gender","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"LgFf8AL1Fyx","attributeValues":[],"categoryOptionCombos":[{"id":"dOSrBjgeTvI"},{"id":"VCeUBVHfX1n"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/LgFf8AL1Fyx
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/LgFf8AL1Fyx","name":"Gender","created":"2023-10-22T17:27:25.464","lastUpdated":"2023-10-22T17:27:53.691","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"col9T7L6nhj"}],"dataDimensionType":"ATTRIBUTE","skipTotal":false,"displayName":"Gender","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"LgFf8AL1Fyx","attributeValues":[],"categoryOptionCombos":[{"id":"dOSrBjgeTvI"},{"id":"VCeUBVHfX1n"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/LgFf8AL1Fyx
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/dOSrBjgeTvI","name":"Male","created":"2023-10-22T17:27:25.529","lastUpdated":"2023-10-22T17:27:25.529","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"LgFf8AL1Fyx"},"categoryOptions":[{"id":"RIp7OmVUsvN"}],"ignoreApproval":false,"dimensionItem":"dOSrBjgeTvI","displayShortName":"Male","displayName":"Male","favorite":false,"displayFormName":"Male","id":"dOSrBjgeTvI","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/dOSrBjgeTvI
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/VCeUBVHfX1n","name":"Female","created":"2023-10-22T17:27:25.500","lastUpdated":"2023-10-22T17:27:25.500","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"LgFf8AL1Fyx"},"categoryOptions":[{"id":"gLWNR96FuPL"}],"ignoreApproval":false,"dimensionItem":"VCeUBVHfX1n","displayShortName":"Female","displayName":"Female","favorite":false,"displayFormName":"Female","id":"VCeUBVHfX1n","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/VCeUBVHfX1n
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/qc0so4e4EHP","name":"Gender/Age","created":"2023-11-13T19:22:03.270","lastUpdated":"2023-11-13T19:22:25.645","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"kcaQdGHoiA3"},{"id":"j91eLJQVBPn"}],"dataDimensionType":"DISAGGREGATION","skipTotal":false,"displayName":"Gender/Age","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"qc0so4e4EHP","attributeValues":[],"categoryOptionCombos":[{"id":"BGo8kjHXpux"},{"id":"WFqN8eDESX4"},{"id":"j4zQQnW4N9I"},{"id":"R8q1ibLaSZu"},{"id":"trmhUs0Nhxi"},{"id":"uTkd5j5AS4I"},{"id":"qbo9BV7OU1A"},{"id":"yhkJk5eFZ6j"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/qc0so4e4EHP
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/qc0so4e4EHP","name":"Gender/Age","created":"2023-11-13T19:22:03.270","lastUpdated":"2023-11-13T19:22:25.645","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"kcaQdGHoiA3"},{"id":"j91eLJQVBPn"}],"dataDimensionType":"DISAGGREGATION","skipTotal":false,"displayName":"Gender/Age","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"qc0so4e4EHP","attributeValues":[],"categoryOptionCombos":[{"id":"BGo8kjHXpux"},{"id":"WFqN8eDESX4"},{"id":"j4zQQnW4N9I"},{"id":"R8q1ibLaSZu"},{"id":"trmhUs0Nhxi"},{"id":"uTkd5j5AS4I"},{"id":"qbo9BV7OU1A"},{"id":"yhkJk5eFZ6j"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/qc0so4e4EHP
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/BGo8kjHXpux","name":"Male,
+      >49","created":"2023-11-13T19:22:03.303","lastUpdated":"2023-11-13T19:22:03.303","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"qfrNOPlWOkV"},{"id":"RIp7OmVUsvN"}],"ignoreApproval":false,"dimensionItem":"BGo8kjHXpux","displayShortName":"Male,
+      >49","displayName":"Male, >49","favorite":false,"displayFormName":"Male, >49","id":"BGo8kjHXpux","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/BGo8kjHXpux
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/WFqN8eDESX4","name":"Male,
+      25-49","created":"2023-11-13T19:22:03.303","lastUpdated":"2023-11-13T19:22:03.303","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"tL1ayXHSnEf"},{"id":"RIp7OmVUsvN"}],"ignoreApproval":false,"dimensionItem":"WFqN8eDESX4","displayShortName":"Male,
+      25-49","displayName":"Male, 25-49","favorite":false,"displayFormName":"Male,
+      25-49","id":"WFqN8eDESX4","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/WFqN8eDESX4
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/j4zQQnW4N9I","name":"Male,  <15","created":"2023-11-13T19:22:03.299","lastUpdated":"2023-11-13T19:22:03.299","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"xwi2Xb5OpDM"},{"id":"RIp7OmVUsvN"}],"ignoreApproval":false,"dimensionItem":"j4zQQnW4N9I","displayShortName":"Male,  <15","displayName":"Male,  <15","favorite":false,"displayFormName":"Male,  <15","id":"j4zQQnW4N9I","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/j4zQQnW4N9I
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/R8q1ibLaSZu","name":"Female,  <15","created":"2023-11-13T19:22:03.304","lastUpdated":"2023-11-13T19:22:03.304","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"xwi2Xb5OpDM"},{"id":"gLWNR96FuPL"}],"ignoreApproval":false,"dimensionItem":"R8q1ibLaSZu","displayShortName":"Female,  <15","displayName":"Female,  <15","favorite":false,"displayFormName":"Female,  <15","id":"R8q1ibLaSZu","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/R8q1ibLaSZu
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/trmhUs0Nhxi","name":"Female,
+      15-24","created":"2023-11-13T19:22:03.305","lastUpdated":"2023-11-13T19:22:03.305","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"unhM0DO0XAN"},{"id":"gLWNR96FuPL"}],"ignoreApproval":false,"dimensionItem":"trmhUs0Nhxi","displayShortName":"Female,
+      15-24","displayName":"Female, 15-24","favorite":false,"displayFormName":"Female,
+      15-24","id":"trmhUs0Nhxi","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/trmhUs0Nhxi
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/uTkd5j5AS4I","name":"Female,
+      >49","created":"2023-11-13T19:22:03.306","lastUpdated":"2023-11-13T19:22:03.306","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"qfrNOPlWOkV"},{"id":"gLWNR96FuPL"}],"ignoreApproval":false,"dimensionItem":"uTkd5j5AS4I","displayShortName":"Female,
+      >49","displayName":"Female, >49","favorite":false,"displayFormName":"Female,
+      >49","id":"uTkd5j5AS4I","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/uTkd5j5AS4I
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/qbo9BV7OU1A","name":"Male,
+      15-24","created":"2023-11-13T19:22:03.301","lastUpdated":"2023-11-13T19:22:03.301","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"RIp7OmVUsvN"},{"id":"unhM0DO0XAN"}],"ignoreApproval":false,"dimensionItem":"qbo9BV7OU1A","displayShortName":"Male,
+      15-24","displayName":"Male, 15-24","favorite":false,"displayFormName":"Male,
+      15-24","id":"qbo9BV7OU1A","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/qbo9BV7OU1A
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/yhkJk5eFZ6j","name":"Female,
+      25-49","created":"2023-11-13T19:22:03.306","lastUpdated":"2023-11-13T19:22:03.306","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"qc0so4e4EHP"},"categoryOptions":[{"id":"tL1ayXHSnEf"},{"id":"gLWNR96FuPL"}],"ignoreApproval":false,"dimensionItem":"yhkJk5eFZ6j","displayShortName":"Female,
+      25-49","displayName":"Female, 25-49","favorite":false,"displayFormName":"Female,
+      25-49","id":"yhkJk5eFZ6j","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/yhkJk5eFZ6j
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/ztwr7HhdTVg","name":"TestAttribute","created":"2023-11-15T22:42:56.622","lastUpdated":"2023-11-15T22:42:56.655","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"YDQeHsn1qT3"}],"dataDimensionType":"ATTRIBUTE","skipTotal":false,"displayName":"TestAttribute","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"ztwr7HhdTVg","attributeValues":[],"categoryOptionCombos":[{"id":"gvNOnH6aSjH"},{"id":"XclDYpCCynN"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/ztwr7HhdTVg
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryCombos/ztwr7HhdTVg","name":"TestAttribute","created":"2023-11-15T22:42:56.622","lastUpdated":"2023-11-15T22:42:56.655","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"categories":[{"id":"YDQeHsn1qT3"}],"dataDimensionType":"ATTRIBUTE","skipTotal":false,"displayName":"TestAttribute","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"id":"ztwr7HhdTVg","attributeValues":[],"categoryOptionCombos":[{"id":"gvNOnH6aSjH"},{"id":"XclDYpCCynN"}],"isDefault":false}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryCombos/ztwr7HhdTVg
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/gvNOnH6aSjH","name":"Test1","created":"2023-11-15T22:42:56.649","lastUpdated":"2023-11-15T22:42:56.649","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"ztwr7HhdTVg"},"categoryOptions":[{"id":"bv7OCuXA8aa"}],"ignoreApproval":false,"dimensionItem":"gvNOnH6aSjH","displayShortName":"Test1","displayName":"Test1","favorite":false,"displayFormName":"Test1","id":"gvNOnH6aSjH","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/gvNOnH6aSjH
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/categoryOptionCombos/XclDYpCCynN","name":"Test2","created":"2023-11-15T22:42:56.654","lastUpdated":"2023-11-15T22:42:56.654","translations":[],"externalAccess":false,"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"external":false,"users":{},"userGroups":{}},"legendSets":[],"categoryCombo":{"id":"ztwr7HhdTVg"},"categoryOptions":[{"id":"mYVnRgfmz76"}],"ignoreApproval":false,"dimensionItem":"XclDYpCCynN","displayShortName":"Test2","displayName":"Test2","favorite":false,"displayFormName":"Test2","id":"XclDYpCCynN","attributeValues":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/categoryOptionCombos/XclDYpCCynN
+- response:
+    auto_calculate_content_length: false
+    body: '{"pager":{"page":1,"total":2,"pageSize":50,"pageCount":1},"dataSets":[{"displayName":"Data
+      Set 1","id":"W1GOcpL46Zr"},{"displayName":"Data Set 2","id":"CVrfb2teXKY"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataSets
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataSets/W1GOcpL46Zr","name":"Data Set
+      1","created":"2023-07-15T13:45:59.923","lastUpdated":"2023-11-15T22:38:20.587","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true,"data":{"write":true,"read":true}},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DS1","dimensionItemType":"REPORTING_RATE","legendSets":[],"periodType":"Monthly","dataInputPeriods":[],"dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"zHB04YXeZxf"}},{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"Iq5NMy10LZd"}}],"indicators":[],"compulsoryDataElementOperands":[],"sections":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"mobile":false,"version":9,"expiryDays":0,"timelyDays":99999,"notifyCompletingUser":false,"interpretations":[],"openFuturePeriods":0,"openPeriodsAfterCoEndDate":0,"fieldCombinationRequired":false,"validCompleteOnly":false,"noValueRequiresComment":false,"skipOffline":false,"dataElementDecoration":false,"renderAsTabs":false,"renderHorizontally":false,"compulsoryFieldsCompleteOnly":false,"formType":"DEFAULT","displayName":"Data
+      Set 1","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"dimensionItem":"W1GOcpL46Zr","displayShortName":"DS1","displayFormName":"Data
+      Set 1","id":"W1GOcpL46Zr","attributeValues":[],"organisationUnits":[{"id":"fRx7slGzH46"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataSets/W1GOcpL46Zr
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataSets/W1GOcpL46Zr","name":"Data Set
+      1","created":"2023-07-15T13:45:59.923","lastUpdated":"2023-11-15T22:38:20.587","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true,"data":{"write":true,"read":true}},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DS1","dimensionItemType":"REPORTING_RATE","legendSets":[],"periodType":"Monthly","dataInputPeriods":[],"dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"zHB04YXeZxf"}},{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"Iq5NMy10LZd"}}],"indicators":[],"compulsoryDataElementOperands":[],"sections":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"mobile":false,"version":9,"expiryDays":0,"timelyDays":99999,"notifyCompletingUser":false,"interpretations":[],"openFuturePeriods":0,"openPeriodsAfterCoEndDate":0,"fieldCombinationRequired":false,"validCompleteOnly":false,"noValueRequiresComment":false,"skipOffline":false,"dataElementDecoration":false,"renderAsTabs":false,"renderHorizontally":false,"compulsoryFieldsCompleteOnly":false,"formType":"DEFAULT","displayName":"Data
+      Set 1","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"dimensionItem":"W1GOcpL46Zr","displayShortName":"DS1","displayFormName":"Data
+      Set 1","id":"W1GOcpL46Zr","attributeValues":[],"organisationUnits":[{"id":"fRx7slGzH46"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataSets/W1GOcpL46Zr
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/zHB04YXeZxf","name":"Data
+      Element 2","created":"2023-09-19T12:03:10.252","lastUpdated":"2023-11-07T19:34:21.733","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE2","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"zHB04YXeZxf"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"zHB04YXeZxf","displayShortName":"DE2","displayName":"Data
+      Element 2","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 2","id":"zHB04YXeZxf","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/zHB04YXeZxf
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/zHB04YXeZxf","name":"Data
+      Element 2","created":"2023-09-19T12:03:10.252","lastUpdated":"2023-11-07T19:34:21.733","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE2","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"zHB04YXeZxf"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"zHB04YXeZxf","displayShortName":"DE2","displayName":"Data
+      Element 2","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 2","id":"zHB04YXeZxf","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/zHB04YXeZxf
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/Iq5NMy10LZd","name":"Data
+      Element 1","created":"2023-07-15T13:48:00.178","lastUpdated":"2023-11-07T19:34:32.704","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE1","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"Iq5NMy10LZd"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"Iq5NMy10LZd","displayShortName":"DE1","displayName":"Data
+      Element 1","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 1","id":"Iq5NMy10LZd","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/Iq5NMy10LZd
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/Iq5NMy10LZd","name":"Data
+      Element 1","created":"2023-07-15T13:48:00.178","lastUpdated":"2023-11-07T19:34:32.704","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE1","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"W1GOcpL46Zr"},"dataElement":{"id":"Iq5NMy10LZd"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"Iq5NMy10LZd","displayShortName":"DE1","displayName":"Data
+      Element 1","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 1","id":"Iq5NMy10LZd","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/Iq5NMy10LZd
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataSets/CVrfb2teXKY","name":"Data Set
+      2","created":"2023-10-21T15:56:49.367","lastUpdated":"2023-11-15T22:43:11.615","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true,"data":{"write":true,"read":true}},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"dimensionItemType":"REPORTING_RATE","legendSets":[],"periodType":"Monthly","dataInputPeriods":[],"dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"pyFTv118Icy"}},{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"a0BCnnhM0dZ"}}],"indicators":[],"compulsoryDataElementOperands":[],"sections":[],"categoryCombo":{"id":"ztwr7HhdTVg"},"mobile":false,"version":4,"expiryDays":0,"timelyDays":15,"notifyCompletingUser":false,"interpretations":[],"openFuturePeriods":0,"openPeriodsAfterCoEndDate":0,"fieldCombinationRequired":false,"validCompleteOnly":false,"noValueRequiresComment":false,"skipOffline":false,"dataElementDecoration":false,"renderAsTabs":false,"renderHorizontally":false,"compulsoryFieldsCompleteOnly":false,"formType":"DEFAULT","displayName":"Data
+      Set 2","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"dimensionItem":"CVrfb2teXKY","displayFormName":"Data
+      Set 2","id":"CVrfb2teXKY","attributeValues":[],"organisationUnits":[{"id":"fRx7slGzH46"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataSets/CVrfb2teXKY
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataSets/CVrfb2teXKY","name":"Data Set
+      2","created":"2023-10-21T15:56:49.367","lastUpdated":"2023-11-15T22:43:11.615","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true,"data":{"write":true,"read":true}},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"dimensionItemType":"REPORTING_RATE","legendSets":[],"periodType":"Monthly","dataInputPeriods":[],"dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"pyFTv118Icy"}},{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"a0BCnnhM0dZ"}}],"indicators":[],"compulsoryDataElementOperands":[],"sections":[],"categoryCombo":{"id":"ztwr7HhdTVg"},"mobile":false,"version":4,"expiryDays":0,"timelyDays":15,"notifyCompletingUser":false,"interpretations":[],"openFuturePeriods":0,"openPeriodsAfterCoEndDate":0,"fieldCombinationRequired":false,"validCompleteOnly":false,"noValueRequiresComment":false,"skipOffline":false,"dataElementDecoration":false,"renderAsTabs":false,"renderHorizontally":false,"compulsoryFieldsCompleteOnly":false,"formType":"DEFAULT","displayName":"Data
+      Set 2","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"dimensionItem":"CVrfb2teXKY","displayFormName":"Data
+      Set 2","id":"CVrfb2teXKY","attributeValues":[],"organisationUnits":[{"id":"fRx7slGzH46"}]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataSets/CVrfb2teXKY
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/pyFTv118Icy","name":"Data
+      Element 4","created":"2023-11-13T19:26:58.029","lastUpdated":"2023-11-13T19:26:58.029","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"Data
+      Element 4","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"pyFTv118Icy"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"pyFTv118Icy","displayShortName":"Data
+      Element 4","displayName":"Data Element 4","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 4","id":"pyFTv118Icy","attributeValues":[],"categoryCombo":{"id":"qc0so4e4EHP"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/pyFTv118Icy
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/pyFTv118Icy","name":"Data
+      Element 4","created":"2023-11-13T19:26:58.029","lastUpdated":"2023-11-13T19:26:58.029","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"Data
+      Element 4","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"SUM","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"pyFTv118Icy"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"pyFTv118Icy","displayShortName":"Data
+      Element 4","displayName":"Data Element 4","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 4","id":"pyFTv118Icy","attributeValues":[],"categoryCombo":{"id":"qc0so4e4EHP"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/pyFTv118Icy
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/a0BCnnhM0dZ","name":"Data
+      Element 3","created":"2023-10-14T16:04:56.859","lastUpdated":"2023-11-13T19:35:31.747","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE3","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"AVERAGE","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"a0BCnnhM0dZ"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"a0BCnnhM0dZ","displayShortName":"DE3","displayName":"Data
+      Element 3","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 3","id":"a0BCnnhM0dZ","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/a0BCnnhM0dZ
+- response:
+    auto_calculate_content_length: false
+    body: '{"href":"http://localhost:8080/api/dataElements/a0BCnnhM0dZ","name":"Data
+      Element 3","created":"2023-10-14T16:04:56.859","lastUpdated":"2023-11-13T19:35:31.747","translations":[],"externalAccess":false,"publicAccess":"rw------","createdBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"userGroupAccesses":[],"userAccesses":[],"access":{"manage":true,"externalize":true,"write":true,"read":true,"update":true,"delete":true},"favorites":[],"lastUpdatedBy":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"sharing":{"owner":"M5zQapPyTZI","external":false,"users":{},"userGroups":{},"public":"rw------"},"shortName":"DE3","dimensionItemType":"DATA_ELEMENT","legendSets":[],"aggregationType":"AVERAGE","valueType":"NUMBER","domainType":"AGGREGATE","dataSetElements":[{"dataSet":{"id":"CVrfb2teXKY"},"dataElement":{"id":"a0BCnnhM0dZ"}}],"aggregationLevels":[],"zeroIsSignificant":false,"optionSetValue":false,"dimensionItem":"a0BCnnhM0dZ","displayShortName":"DE3","displayName":"Data
+      Element 3","favorite":false,"user":{"id":"M5zQapPyTZI","code":"admin","name":"admin
+      admin","displayName":"admin admin","username":"admin"},"displayFormName":"Data
+      Element 3","id":"a0BCnnhM0dZ","attributeValues":[],"categoryCombo":{"id":"bjDvmb4bfuf"},"dataElementGroups":[]}'
+    content_type: text/plain
+    method: GET
+    status: 200
+    url: http://localhost:8080/api/dataElements/a0BCnnhM0dZ

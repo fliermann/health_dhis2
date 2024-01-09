@@ -1,0 +1,12 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="data_mapping"/>
+    <field name="data_mapping"/>
+    <label name="preset"/>
+    <field name="preset"/>
+</form>

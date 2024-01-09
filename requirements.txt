@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: 2023 Florian Liermann
+#
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+trytond~=6.8.2
+responses~=0.24.0
+requests~=2.31.0

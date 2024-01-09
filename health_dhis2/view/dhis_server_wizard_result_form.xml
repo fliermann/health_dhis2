@@ -1,0 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <field name="result"/>
+</form>

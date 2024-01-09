@@ -1,0 +1,23 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <group string="Settings" id="dhis_data_mapping_settings_group">
+        <label name="name"/>
+        <field name="name"/>
+        <label name="mapping_active"/>
+        <field name="mapping_active"/>
+        <newline/>
+        <label name="data_element"/>
+        <field name="data_element"/>
+        <label name="category_option"/>
+        <field name="category_option"/>
+    </group>
+    <newline/>
+    <group string="SQL Query" id="dhis_data_mapping_query_group">
+            <field name="sql_query" widget="text"/>
+    </group>
+</form>

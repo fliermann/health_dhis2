@@ -1,0 +1,12 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+   <field name="label" expand="1"/>
+   <field name="url" expand="1"/>
+   <button name="sync_button"/>
+   <button name="submit_data_button"/>
+</tree>

@@ -1,0 +1,12 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="name" expand="1"/>
+    <field name="server" expand="1"/>
+    <field name="data_set_id" width="150"/>
+    <field name="org_unit" expand="1"/>
+</tree>

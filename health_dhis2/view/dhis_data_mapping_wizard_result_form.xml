@@ -1,0 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <group string="SQL query result" id="dhis_data_mapping_wizard_result_group">
+        <field name="result"/>
+    </group>
+</form>

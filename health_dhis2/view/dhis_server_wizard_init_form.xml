@@ -1,0 +1,14 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <label name="label"/>
+    <field name="label"/>
+    <label name="url"/>
+    <field name="url"/>
+    <label name="pat"/>
+    <field name="pat" widget="password"/>
+</form>

@@ -1,0 +1,31 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<form>
+    <group string="Server information" id="dhis_group_server_info">
+        <label name="server"/>
+        <field name="server"/>
+        <field name="server_url" widget="url"/>
+    </group>
+    <newline/>
+    <group string="Data set" id="dhis_group_data_set_info">
+        <label name="name"/>
+        <field name="name"/>
+        <newline/>
+        <label name="data_set_id"/>
+        <field name="data_set_id"/>
+        <newline/>
+        <label name="org_unit"/>
+        <field name="org_unit" widget="selection"/>
+        <newline/>
+        <label name="category_combo"/>
+        <field name="category_combo"/>
+    </group>
+    <newline/>
+    <group string="Children" id="dhis_group_data_set_children">
+        <field name="data_elements"/>
+    </group>
+</form>

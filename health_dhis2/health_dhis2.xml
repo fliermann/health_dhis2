@@ -1,0 +1,276 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tryton>
+    <data>
+        <!-- DHIS2 Server List-->
+        <record model="ir.ui.view" id="dhis_server_view_list">
+            <field name="model">gnuhealth.dhis2.server</field>
+            <field name="type">tree</field>
+            <field name="name">dhis_server_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_dhis_server_list">
+            <field name="name">DHIS2</field>
+            <field name="res_model">gnuhealth.dhis2.server</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_server_form_list">
+            <field name="sequence" eval="10"/>
+            <field name="view" ref="dhis_server_view_list"/>
+            <field name="act_window" ref="act_dhis_server_list"/>
+        </record>
+        <record model="ir.model.button" id="dhis_server_button">
+            <field name="name">sync_button</field>
+            <field name="string">Synchronize</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.server')]"/>
+        </record>
+        <record model="ir.model.button" id="dhis_server_button_submit_data">
+            <field name="name">submit_data_button</field>
+            <field name="string">Submit data</field>
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.server')]"/>
+        </record>
+
+        <!-- DHIS2 Server Form -->
+        <record model="ir.ui.view" id="dhis_server_view_form">
+            <field name="model">gnuhealth.dhis2.server</field>
+            <field name="type">form</field>
+            <field name="name">dhis_server_form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_server_form_view">
+            <field name="sequence" eval="20"/>
+            <field name="view" ref="dhis_server_view_form"/>
+            <field name="act_window" ref="act_dhis_server_list"/>
+        </record>
+
+        <!-- Data Set List -->
+        <record model="ir.ui.view" id="dhis_data_set_view_list">
+            <field name="model">gnuhealth.dhis2.data_set</field>
+            <field name="type">tree</field>
+            <field name="name">dhis_data_set_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_dhis_data_set_list">
+             <field name="name">Data Sets</field>
+             <field name="res_model">gnuhealth.dhis2.data_set</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_data_sets_list_view">
+             <field name="sequence" eval="10"/>
+             <field name="view" ref="dhis_data_set_view_list"/>
+             <field name="act_window" ref="act_dhis_data_set_list"/>
+        </record>
+
+        <!-- Data Set Form -->
+        <record model="ir.ui.view" id="dhis_data_set_view_form">
+           <field name="model">gnuhealth.dhis2.data_set</field>
+           <field name="type">form</field>
+           <field name="name">dhis_data_set_form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_data_sets_form_view">
+             <field name="sequence" eval="20"/>
+             <field name="view" ref="dhis_data_set_view_form"/>
+             <field name="act_window" ref="act_dhis_data_set_list"/>
+        </record>
+
+        <!-- Data Element List -->
+        <record model="ir.ui.view" id="dhis_data_element_view_list">
+            <field name="model">gnuhealth.dhis2.data_element</field>
+            <field name="type">tree</field>
+            <field name="name">dhis_data_element_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_dhis_data_element_list">
+             <field name="name">Data Elements</field>
+             <field name="res_model">gnuhealth.dhis2.data_element</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_data_elements_list_view">
+             <field name="sequence" eval="10"/>
+             <field name="view" ref="dhis_data_element_view_list"/>
+             <field name="act_window" ref="act_dhis_data_element_list"/>
+        </record>
+
+        <!-- Data Mapping  List -->
+        <record model="ir.ui.view" id="dhis_data_mapping_view_list">
+           <field name="model">gnuhealth.dhis2.data_mapping</field>
+           <field name="type">tree</field>
+           <field name="name">dhis_data_mapping_list</field>
+        </record>
+        <record model="ir.action.act_window" id="act_dhis_data_mapping_list">
+             <field name="name">Data Mapping</field>
+             <field name="res_model">gnuhealth.dhis2.data_mapping</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_data_mapping_list_view">
+             <field name="sequence" eval="10"/>
+             <field name="view" ref="dhis_data_mapping_view_list"/>
+             <field name="act_window" ref="act_dhis_data_mapping_list"/>
+        </record>
+
+        <!-- Data Mapping Form -->
+        <record model="ir.ui.view" id="dhis_data_mapping_view_form">
+           <field name="model">gnuhealth.dhis2.data_mapping</field>
+           <field name="type">form</field>
+           <field name="name">dhis_data_mapping_form</field>
+        </record>
+        <record model="ir.action.act_window.view" id="act_dhis_data_mapping_form_view">
+             <field name="sequence" eval="20"/>
+             <field name="view" ref="dhis_data_mapping_view_form"/>
+             <field name="act_window" ref="act_dhis_data_mapping_list"/>
+        </record>
+
+        <!-- DHIS2 Wizard -->
+        <record model="ir.ui.view" id="dhis_add_init_view">
+            <field name="model">gnuhealth.dhis2.server.wizard.init</field>
+            <field name="type">form</field>
+            <field name="name">dhis_server_wizard_init_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_add_sync_result_view">
+            <field name="model">gnuhealth.dhis2.server.wizard.sync_result</field>
+            <field name="type">form</field>
+            <field name="name">dhis_server_wizard_result_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_dhis_add_server">
+            <field name="name">Add DHIS2 server</field>
+            <field name="wiz_name">gnuhealth.dhis2.server.wizard</field>
+        </record>
+
+        <!-- Data Mapping Wizard -->
+        <record model="ir.ui.view" id="dhis_data_mapping_wizard_select_view">
+            <field name="model">gnuhealth.dhis2.data_mapping.wizard.select_mapping</field>
+            <field name="type">form</field>
+            <field name="name">dhis_data_mapping_wizard_select_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_data_mapping_wizard_result_view">
+            <field name="model">gnuhealth.dhis2.data_mapping.wizard.result</field>
+            <field name="type">form</field>
+            <field name="name">dhis_data_mapping_wizard_result_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_dhis_data_mapping_wizard">
+            <field name="name">Configure a Data Element</field>
+            <field name="wiz_name">gnuhealth.dhis2.data_mapping.wizard</field>
+        </record>
+
+        <!-- Data Mapping Wizard Presets -->
+        <record model="ir.ui.view" id="dhis_data_mapping_wizard_preset_disease_view">
+            <field name="model">gnuhealth.dhis2.data_mapping.wizard.preset_disease</field>
+            <field name="type">form</field>
+            <field name="name">dhis_data_mapping_wizard_preset_disease_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_data_mapping_wizard_preset_operation_procedure_view">
+            <field name="model">gnuhealth.dhis2.data_mapping.wizard.preset_operation_procedure</field>
+            <field name="type">form</field>
+            <field name="name">dhis_data_mapping_wizard_preset_operation_procedure_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_data_mapping_wizard_preset_raw_sql_view">
+            <field name="model">gnuhealth.dhis2.data_mapping.wizard.preset_raw_sql</field>
+            <field name="type">form</field>
+            <field name="name">dhis_data_mapping_wizard_preset_raw_sql_form</field>
+        </record>
+
+        <!-- Export Wizard -->
+        <record model="ir.ui.view" id="dhis_export_start_view">
+            <field name="model">gnuhealth.dhis2.export.start</field>
+            <field name="type">form</field>
+            <field name="name">dhis_export_start_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_export_result_view">
+            <field name="model">gnuhealth.dhis2.export.result</field>
+            <field name="type">form</field>
+            <field name="name">dhis_export_result_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_dhis_export_wizard">
+            <field name="name">Export data mappings</field>
+            <field name="wiz_name">gnuhealth.dhis2.export.wizard</field>
+        </record>
+
+        <!-- Import Wizard -->
+        <record model="ir.ui.view" id="dhis_import_start_view">
+            <field name="model">gnuhealth.dhis2.import.start</field>
+            <field name="type">form</field>
+            <field name="name">dhis_import_start_form</field>
+        </record>
+        <record model="ir.ui.view" id="dhis_import_result_view">
+            <field name="model">gnuhealth.dhis2.import.result</field>
+            <field name="type">form</field>
+            <field name="name">dhis_import_result_form</field>
+        </record>
+        <record model="ir.action.wizard" id="act_dhis_import_wizard">
+            <field name="name">Import data mappings</field>
+            <field name="wiz_name">gnuhealth.dhis2.import.wizard</field>
+        </record>
+
+        <!-- Icons -->
+        <record model="ir.ui.icon" id="dhis_icon">
+            <field name="name">dhis-icon</field>
+            <field name="path">icons/dhis2_icon.svg</field>
+        </record>
+
+        <record model="ir.ui.icon" id="gnuhealth_execute_icon">
+            <field name="name">gnuhealth-execute</field>
+            <field name="path">icons/execute_icon.svg</field>
+        </record>
+
+        <!-- Menu -->
+        <menuitem
+            name="DHIS2"
+            sequence="50"
+            id="menu_dhis"
+            parent="ir.menu_administration"
+            icon="dhis-icon"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_server_list"
+            sequence="10"
+            id="menu_dhis_server_list"
+            name="Servers"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_data_set_list"
+            sequence="20"
+            id="menu_dhis_connection_form"
+            name="Data Sets"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_data_element_list"
+            sequence="30"
+            id="menu_dhis_data_element_list"
+            name="Data Elements"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_data_mapping_list"
+            sequence="40"
+            id="menu_dhis_data_mapping_list"
+            name="Data Mapping"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_add_server"
+            id="menu_dhis_add_server"
+            sequence="50"
+            icon="gnuhealth-execute"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_data_mapping_wizard"
+            sequence="60"
+            id="menu_dhis_data_mapping_wizard"
+            name="Configure a data mapping"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_export_wizard"
+            sequence="70"
+            id="menu_dhis_export_wizard"
+            name="Export data mappings"
+        />
+        <menuitem
+            parent="menu_dhis"
+            action="act_dhis_import_wizard"
+            sequence="80"
+            id="menu_dhis_import_wizard"
+            name="Import data mappings"
+        />
+    </data>
+</tryton>

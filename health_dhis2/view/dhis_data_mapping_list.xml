@@ -1,0 +1,11 @@
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tree>
+    <field name="mapping_active" width="60"/>
+    <field name="name" expand="1"/>
+    <field name="sql_query" expand="1"/>
+</tree>

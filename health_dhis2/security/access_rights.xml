@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+SPDX-FileCopyrightText: 2023 Florian Liermann
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
+<tryton>
+    <data>
+        <!-- Create the DHIS2 Administration group -->
+        <record model="res.group" id="group_dhis2_admin">
+            <field name="name">DHIS2 Administration</field>
+        </record>
+
+        <!-- Assign group to the admin user -->
+        <record model="res.user-res.group" id="user_admin_group_dhis2">
+            <field name="user" ref="res.user_admin"/>
+            <field name="group" ref="group_dhis2_admin"/>
+        </record>
+
+        <!-- BEGIN DHIS2 ADMINISTRATION GROUP ACCESS RIGHTS -->
+
+        <!-- Access rights to Menus -->
+        <record model="ir.ui.menu-res.group" id="menu_dhis2_admin_group_dhis2">
+            <field name="menu" ref="menu_dhis"/>
+            <field name="group" ref="group_dhis2_admin"/>
+        </record>
+
+        <!-- Access rights to models for dhis2 admin group -->
+        <record model="ir.model.access" id="access_dhis2_server_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.server')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_org_unit_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.org_unit')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_category_combo_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.category_combo')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_category_option_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.category_option_combo')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_set_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_set')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_element_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_element')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_mapping_admin">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_mapping')]"/>
+            <field name="group" ref="group_dhis2_admin"/>
+            <field name="perm_read" eval="True"/>
+            <field name="perm_write" eval="True"/>
+            <field name="perm_create" eval="True"/>
+            <field name="perm_delete" eval="True"/>
+        </record>
+
+        <!-- END DHIS2 ADMINISTRATION GROUP ACCESS RIGHTS -->
+
+
+        <!-- BEGIN DEFAULT ACCESS RIGHTS -->
+
+        <!-- Access rights to Menus -->
+
+        <!-- Access rights to models for default users -->
+        <record model="ir.model.access" id="access_dhis2_server">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.server')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_org_unit">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.org_unit')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_category_combo">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.category_combo')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_category_option">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.category_option_combo')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_set">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_set')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_element">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_element')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <record model="ir.model.access" id="access_dhis2_data_mapping">
+            <field name="model" search="[('model', '=', 'gnuhealth.dhis2.data_mapping')]"/>
+            <field name="perm_read" eval="False"/>
+            <field name="perm_write" eval="False"/>
+            <field name="perm_create" eval="False"/>
+            <field name="perm_delete" eval="False"/>
+        </record>
+
+        <!-- END DEFAULT ACCESS RIGHTS -->
+    </data>
+</tryton>
