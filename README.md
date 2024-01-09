@@ -6,6 +6,9 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 # GNUHealth DHIS2
 
+This is a module for the hospital information system GNU Health.
+It allows GNU Health to connect to DHIS2 and send aggregate data to it.
+
 ## Installation
 If GNU Health was installed with the Ansible script, just run the `build.sh` script.
 If you are not using the demo database you need to adjust the database name in the script in the following line.
